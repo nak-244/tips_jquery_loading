@@ -78,3 +78,5 @@ function stopload(){
 }
 </script>
 ~~~
+
+[DEMO](https://gimmicklog.com/demo/loading/loading.html)
