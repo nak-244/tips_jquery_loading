@@ -50,7 +50,7 @@ CSSではローディング画面の初期設定を非表示になるように�
 
 これがなくても動くので、通常は16～25行目は無くてもOKです。
 
-~~~script
+~~~Javascript
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(function() {
