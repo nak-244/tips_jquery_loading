@@ -19,11 +19,12 @@
     <img src="https://newstella.co.jp/wp-content/themes/nst/demo/170302-pageload/2.JPG" alt="テスト画像2">
     <img src="https://newstella.co.jp/wp-content/themes/nst/demo/170302-pageload/3.JPG" alt="テスト画像3">
   </div>
-
+<!-- ★ -->
   <div id="js-loader" class="loader">
     <div class="loader-animation"></div>
   </div>
-
+<!-- ★ -->
 </body>
 </html>
 ~~~
+ローディングに必要なのは、<!-- ★ -->で囲われた部分のみ。
