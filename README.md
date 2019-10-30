@@ -61,7 +61,8 @@ function stopload(){
 CSSは以下のようになります。
 
 ~~~CSS
-<style type="text/css">/* ローディングの背景部分のCSS */
+<style type="text/css">
+/* ローディングの背景部分のCSS */
 .loader{
   background:#00AEEF;
   height:100%;
