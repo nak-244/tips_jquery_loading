@@ -361,7 +361,7 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
  var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
  document.write(output);
 </script>
-    <p class="loadtext">Loading ...</p>
+    <p class="loadtext">Now Loading ...</p>
   </div>
 </div>
 <style>
@@ -414,6 +414,10 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
    65%  { transform: translate(-7%, 0%) rotate(-7deg); }
    75%  { transform: translate(0%, 0%) rotate(0deg); }
    100% { transform: translate(0%, 0%) rotate(0deg); }
+ }
+ /* Now Loading ... */
+ .loadtext{
+   color: #FFFFFF;
  }
 </style>
 
