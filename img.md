@@ -1,0 +1,45 @@
+## ページ遷移時のローディングアニメーションをimgで
+
+## 伸びるアニメーション
+https://ics-creative.github.io/160311_css3_animation/demo/purun.html
+~~~html
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    /* CSSアニメーションの設定 */
+    .purun {
+      -webkit-animation: purun 0.8s linear 0s 1;
+      animation: purun 0.8s linear 0s 1;
+    }
+    @-webkit-keyframes purun {
+      0%   { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+      15%  { -webkit-transform: scale(0.9, 0.9) translate(0%, 5%); }
+      30%  { -webkit-transform: scale(1.3, 0.8) translate(0%, 10%); }
+      50%  { -webkit-transform: scale(0.8, 1.3) translate(0%, -10%); }
+      70%  { -webkit-transform: scale(1.1, 0.9) translate(0%, 5%); }
+      100% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+    }
+    @keyframes purun {
+      0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+      15%  { transform: scale(0.9, 0.9) translate(0%, 5%); }
+      30%  { transform: scale(1.3, 0.8) translate(0%, 10%); }
+      50%  { transform: scale(0.8, 1.3) translate(0%, -10%); }
+      70%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+      100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+    }
+  </style>
+  <script src="js/common.js"></script>
+</head>
+<body>
+  <div class="shadow"></div>
+  <img id="mitarashi" class="purun" src="images/mitarashi.png" width="200" height="200">
+  <script>
+    // ID値「mitarashi」に対してCSSアニメ―ション「purun」を600ミリ秒の間隔を空けてループ再生
+    looopAnimation("mitarashi", "purun", 600);
+  </script>
+</body>
+</html>
+~~~
