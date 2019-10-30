@@ -1,4 +1,4 @@
-## ページ遷移時のローディングアニメーションをimgで
+# ページ遷移時のローディングアニメーションをimgで
 
 ## 伸びるアニメーション
 https://ics-creative.github.io/160311_css3_animation/demo/purun.html
