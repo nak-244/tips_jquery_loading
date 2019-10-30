@@ -14,7 +14,20 @@
 
   <div class="loader" id="js-loader">
     <div class="loader-animation">
-      <img id="mitarashi" class="korokoro" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png" width="300">
+      <!-- <img id="mitarashi" class="korokoro" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png" width="300"> -->
+      <script type="text/javascript">
+   var imglist = new Array(
+      "https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png",
+      "https://www.olp.co.jp/jobsite_assets/img/sigotora/loading2.png",
+      "https://www.olp.co.jp/jobsite_assets/img/sigotora/loading3.png",
+      "https://www.olp.co.jp/jobsite_assets/img/sigotora/loading4.png" );
+   var selectnum = Math.floor(Math.random() * imglist.length);
+   var idtxt = "mitarashi";
+   var classtxt = "korokoro";
+   var widthtxt = "300";
+   var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
+   document.write(output);
+</script>
       <p class="loadtext">Loading ...</p>
     </div>
   </div>
