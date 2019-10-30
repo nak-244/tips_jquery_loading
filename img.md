@@ -386,8 +386,8 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
   }
   /* CSSアニメーションの設定 */
   .korokoro {
-    -webkit-animation: korokoro 2.5s linear 0s 1;
-    animation: korokoro 2.5s linear 0s 1;
+    -webkit-animation: korokoro 4s linear 0s 1;
+    animation: korokoro 4s linear 0s 1;
   }
   @-webkit-keyframes korokoro {
    0%   { -webkit-transform: translate(0%, 0%); }
@@ -437,7 +437,7 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
     }
   }
   // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-  looopAnimation("mitarashi", "korokoro", 2000);
+  looopAnimation("mitarashi", "korokoro", 100);
 
   // ローディング画面をフェードインさせてページ遷移
   $(function() {
