@@ -384,10 +384,10 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
     flex-direction: column;
     justify-content: center;
   }
-  /* CSSアニメーションの設定 */
+  /* しごとらアニメーションの設定 */
   .korokoro {
-    -webkit-animation: korokoro 4s linear 0s 1;
-    animation: korokoro 4s linear 0s 1;
+    -webkit-animation: korokoro 2.5s linear 0s 1;
+    animation: korokoro 2.5s linear 0s 1;
   }
   @-webkit-keyframes korokoro {
    0%   { -webkit-transform: translate(0%, 0%); }
@@ -415,14 +415,10 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
    75%  { transform: translate(0%, 0%) rotate(0deg); }
    100% { transform: translate(0%, 0%) rotate(0deg); }
  }
- /* loadtext */
- .loadtext {
-   color: #FFFFFF;
- }
 </style>
 
 <script>
-  // CSSアニメーションを間隔を空けてループ再生させる処理
+  // しごとらアニメーションを間隔を空けてループ再生させる処理
   function looopAnimation(id, className, delay) {
     var element = document.getElementById(id);
     element.addEventListener("animationend", listener);
