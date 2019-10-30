@@ -437,7 +437,7 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
     }
   }
   // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-  looopAnimation("mitarashi", "korokoro", 100);
+  looopAnimation("mitarashi", "korokoro", 2000);
 
   // ローディング画面をフェードインさせてページ遷移
   $(function() {
