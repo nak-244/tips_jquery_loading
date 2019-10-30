@@ -61,7 +61,6 @@ function stopload(){
 CSSは以下のようになります。
 
 ~~~CSS
-<style type="text/css">
 /* ローディングの背景部分のCSS */
 .loader{
   background:#00AEEF;
@@ -139,5 +138,4 @@ CSSは以下のようになります。
     transform: rotate(360deg);
   }
 }
-</style>
 ~~~
