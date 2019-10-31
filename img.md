@@ -471,3 +471,5 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
   }
 </script>
 ~~~
+
+jsやcssファイルを外部ファイル化して、しごとらへ反映させてます。
