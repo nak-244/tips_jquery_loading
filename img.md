@@ -361,8 +361,8 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
  var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
  document.write(output);
 </script>
-    <p class="loadtext">Now Loading ...</p>
-    <!-- <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop"> -->
+    <!-- <p class="loadtext">Now Loading ...</p> -->
+    <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop">
   </div>
 </div>
 <style>
@@ -387,54 +387,33 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
   }
   /* しごとらアニメーションの設定 */
   .korokoro {
-    -webkit-animation: korokoro 5s linear 0s infinite ;
-    animation: korokoro 5s linear 0s infinite ;
+    -webkit-animation: korokoro 2.5s linear 0s 1;
+    animation: korokoro 2.5s linear 0s 1;
   }
   @-webkit-keyframes korokoro {
    0%   { -webkit-transform: translate(0%, 0%); }
-   3%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-   13%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
-   15%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
-   17%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
-   22%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-   25%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
-   30%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
-   33%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
-   37%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
-   50% { -webkit-transform: translate(0%, 0%) rotate(0deg); }
-   53%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-   63%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
-   65%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
-   67%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
-   72%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-   75%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
-   80%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
-   83%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
-   87%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
+   5%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+   25%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
+   30%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
+   35%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
+   45%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+   50%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
+   60%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
+   65%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
+   75%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
    100% { -webkit-transform: translate(0%, 0%) rotate(0deg); }
  }
  @keyframes korokoro {
    0%   { transform: translate(0%, 0%); }
-   0%   { transform: translate(0%, 0%); }
-   3%   { transform: translate(10%, 0%) rotate(10deg); }
-   13%  { transform: translate(20%, 0%) rotate(20deg); }
-   15%  { transform: translate(-10%, 0%) rotate(-10deg); }
-   17%  { transform: translate(-15%, 0%) rotate(-15deg); }
-   22%  { transform: translate(10%, 0%) rotate(10deg); }
-   25%  { transform: translate(15%, 0%) rotate(15deg); }
-   30%  { transform: translate(-5%, 0%) rotate(-5deg); }
-   33%  { transform: translate(-7%, 0%) rotate(-7deg); }
-   37%  { transform: translate(0%, 0%) rotate(0deg); }
-   50% { transform: translate(0%, 0%) rotate(0deg); }
-   53%   { transform: translate(10%, 0%) rotate(10deg); }
-   63%  { transform: translate(20%, 0%) rotate(20deg); }
-   65%  { transform: translate(-10%, 0%) rotate(-10deg); }
-   67%  { transform: translate(-15%, 0%) rotate(-15deg); }
-   72%  { transform: translate(10%, 0%) rotate(10deg); }
-   75%  { transform: translate(15%, 0%) rotate(15deg); }
-   80%  { transform: translate(-5%, 0%) rotate(-5deg); }
-   83%  { transform: translate(-7%, 0%) rotate(-7deg); }
-   87%  { transform: translate(0%, 0%) rotate(0deg); }
+   5%   { transform: translate(10%, 0%) rotate(10deg); }
+   25%  { transform: translate(20%, 0%) rotate(20deg); }
+   30%  { transform: translate(-10%, 0%) rotate(-10deg); }
+   35%  { transform: translate(-15%, 0%) rotate(-15deg); }
+   45%  { transform: translate(10%, 0%) rotate(10deg); }
+   50%  { transform: translate(15%, 0%) rotate(15deg); }
+   60%  { transform: translate(-5%, 0%) rotate(-5deg); }
+   65%  { transform: translate(-7%, 0%) rotate(-7deg); }
+   75%  { transform: translate(0%, 0%) rotate(0deg); }
    100% { transform: translate(0%, 0%) rotate(0deg); }
  }
  /* Now Loading ... */
@@ -462,7 +441,7 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
     }
   }
   // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-  looopAnimation("mitarashi", "korokoro", 10000);
+  looopAnimation("mitarashi", "korokoro", 100);
 
   // ローディング画面をフェードインさせてページ遷移
   $(function() {
