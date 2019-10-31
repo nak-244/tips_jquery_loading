@@ -361,8 +361,8 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
  var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
  document.write(output);
 </script>
-    <!-- <p class="loadtext">Now Loading ...</p> -->
-    <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop">
+    <p class="loadtext">Now Loading ...</p>
+    <!-- <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop"> -->
   </div>
 </div>
 <style>
