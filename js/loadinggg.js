@@ -1,19 +1,3 @@
-    // しごとらアニメーションを間隔を空けてループ再生させる処理
-    function looopAnimation(id, className, delay) {
-      var element = document.getElementById(id);
-      element.addEventListener("animationend", listener);
-
-      function listener(event) {
-        event.target.classList.remove(className);
-        setTimeout(playAnimation, delay);
-      }
-
-      function playAnimation() {
-        element.classList.add(className);
-      }
-    }
-    // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-    looopAnimation("mitarashi", "korokoro", 100);
 
     // ローディング画面をフェードインさせてページ遷移
     $(function() {
