@@ -361,8 +361,8 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
  var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
  document.write(output);
 </script>
-    <!-- <p class="loadtext">Now Loading ...</p> -->
-    <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop">
+    <p class="loadtext">Now Loading ...</p>
+    <!-- <img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/load.gif" class="spacetop"> -->
   </div>
 </div>
 <style>
@@ -387,8 +387,8 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
   }
   /* しごとらアニメーションの設定 */
   .korokoro {
-    -webkit-animation: korokoro 5s linear 0s 1;
-    animation: korokoro 5s linear 0s 1;
+    -webkit-animation: korokoro 5s linear 0s infinite ;
+    animation: korokoro 5s linear 0s infinite ;
   }
   @-webkit-keyframes korokoro {
    0%   { -webkit-transform: translate(0%, 0%); }
@@ -462,7 +462,7 @@ https://ics-creative.github.io/160311_css3_animation/demo/pururun.html
     }
   }
   // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-  looopAnimation("mitarashi", "korokoro", 100);
+  looopAnimation("mitarashi", "korokoro", 10000);
 
   // ローディング画面をフェードインさせてページ遷移
   $(function() {
